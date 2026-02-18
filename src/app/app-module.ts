@@ -7,6 +7,7 @@ import { Header } from './components/header/header';
 import { Sidebar } from './components/sidebar/sidebar';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { Services } from './pages/services/services';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Services } from './pages/services/services';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
